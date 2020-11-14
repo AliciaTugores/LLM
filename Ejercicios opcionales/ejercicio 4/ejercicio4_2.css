@@ -1,0 +1,28 @@
+p{
+    color:00F;
+    background-color: #CFC;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+h1{
+    color:#F00;
+    font-family: Verdana, 'Times New Roman', sans-serif;
+    font-size: 32px;
+
+}
+
+h3{
+    color:#A00;
+    font-family:Verdana, times, sans-serif;
+    font-size:24px;
+}
+
+a:link{
+    color:#0000CC;
+}
+
+a:visited{
+    color:#6D006D;
+    font-style:italic;
+}
