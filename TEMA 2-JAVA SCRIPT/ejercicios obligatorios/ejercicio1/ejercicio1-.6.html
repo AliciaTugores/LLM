@@ -1,0 +1,37 @@
+<!--6- Escriu un script que llegeixi una cadena de text i generi un array amb les paraules que conté. 
+    Després s'ha de mostrar la següent informació:
+
+Número de paraules que té l'array.
+Mostrar la primera paraula i la darrera paraula.
+Mostrar les paraules en ordre invers.-->
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        
+        <script>
+            var frase = prompt('Escribe una frase: ');
+
+            function crear_array(frase) {
+                return frase.split(" ")
+            }
+
+            var array = crear_array(frase);
+
+            alert('El número de palabras de tu frase es: ' + array.length);
+            alert('La primera y última palabra son: ' + array[0] + ' y ' + array[array.length -1]);
+            alert('Tu frase al revés es: ' + array.reverse());
+
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!--8- Escriu un script que permeti afegir contingut a la pàgina web. Es tracta de crear una llista de Paisos i per cada element 
+    d'aquesta llista, s'ha de crear una subllista amb el continent al que pertany el país, la llengua majoritària que es xerra al
+    país i  la seva  moneda (tot s'ha de demanar per pantalla). La llista ha de tenir els següents estils: color de la lletra 
+    vermell, grandària del elements 20pt.-->
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ejercicio8.css">
+    </head>
+    <body>
+        <script>
+            
+            for (var i = 1; i <= 3; i++) {
+
+                var pais = prompt('Escriba un país: ');
+                var continente = prompt('¿A qué continente pertenece? ');
+                var idioma = prompt('¿Qué idioma se habla?' );
+                var moneda = prompt('¿Qué moneda se utiliza? ');
+                
+                document.write('<ul>' + pais + '<li>' + continente + '</li>' + '<li>' + idioma + '</li>' + '<li>' + moneda + '</li>' + '</ul>');
+
+            }
+
+        </script>
+    </body>
+</html>

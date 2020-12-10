@@ -1,0 +1,21 @@
+h3{
+    font-style: italic;
+}
+
+a.hover{
+    color: grey;
+}
+a.focus{
+    color:green;
+}
+
+p.important{
+    color: blue;
+    font-family: 'Times New Roman', Arial;
+    text-decoration: underline;
+    text-align: center; 
+}
+
+body{
+    background-color:#D1F2EB;
+}
