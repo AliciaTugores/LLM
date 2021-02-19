@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <form action="" name="formulari">
+            <label for="nom"> Nom: </label>
+            <input type="text" name="nom" id="nom" required>
+            <label for="edat">Edat: </label>
+            <input id="edat" type="number" value="0" required>
+            <label for="esport">Esport: </label>
+            <input type="text" name="esport" id="esport" required>
+            <label for="color"> Color: </label>
+            <input type="color" id="color" name="color" value="#ff0000" required>
+            <label for="data">Data: </label>
+            <input type="date" name="data" id="data">
+        </form>
+        <button onclick="myFunction()">Afegir</button>
+        <div id="llista"></div>
+
+        <script>
+
+        function myFunction() {
+            var nom = document.createTextNode(document.forms["formulari"]["nom"].value)
+            var edat = document.createTextNode(document.forms["formulari"]["edat"].value)
+            var esport = document.forms["formulari"]["esport"].value
+            var color = document.createTextNode(document.forms["formulari"]["color"].value)
+            var data = document.createTextNode(document.forms["formulari"]["data"].value)
+            var dades = [edat, color, data]
+            var id = document.getElementById(esport)
+            var dadesEsport = document.createElement("ul");
+            var persona = document.createElement('li');
+            persona.appendChild(nom);
+            dadesEsport.appendChild(persona);
+            var llistaDades = document.createElement("ul");
+            console.log(id)
+            if(id == null) {
+                var nouEsport = document.createElement("ul");
+                nouEsport.id = esport;
+                nouEsport.appendChild(document.createElement('li').appendChild(document.createTextNode(esport)));
+            }
+            else {
+                var nouEsport = document.getElementById(esport);
+            }
+
+            for (var i = 0; i < dades.length; i++) {
+                var dada = dades[i];
+                var li = document.createElement('li');
+                li.appendChild(dada);
+                llistaDades.appendChild(li);
+            }
+
+            dadesEsport.appendChild(llistaDades);
+            nouEsport.appendChild(dadesEsport);
+            document.getElementById("llista").appendChild(nouEsport);
+            }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!--3. Aprofitant l'exercici anterior, a l'HTML afegirem una llista (potser ordenada o desordenada) amb tres elements dins d'un <header>.
+
+A més escriurem una nova regla a l'arxiu de CSS, que definirà l'estil d'una classe anomenada "vistallista" que tendrà les següents regles:
+
+Ha de mostrar els elements en línia (propietat: display:inline)
+S'ha de posar a la part més superior de la pàgina
+El color del text ha de ser #229954
+La font de la lletra ha de ser Arial al 125%
+I finalment, escriurem una funció js que permeti afegir la classe "vistallista" a la llista. Aquesta funció es cridarà mitjançant l'esdeveniment "onclick" que també es llançarà mitjançant un botó que crearem al <main>.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ejercicio3.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li>hola</li>
+                <li>como</li>
+                <li>estas</li>
+            </ul>
+        </header>
+        <main>
+            <button onclick="changefooter()">CAMBIAR PIE DE PAGINA</button>
+            <button onclick="add()">AÑADIR VISTALLISTA</button>
+        </main>
+        
+        <script>
+            function changefooter(){
+                var question = prompt('¿Qué quieres que aparezca al final de la página?')
+                document.getElementsByTagName('footer')[0].innerHTML = question
+            }
+            function add(){
+                document.getElementsByTagName('ul')[0].className = 'vistallista'
+            }   
+        </script>
+
+        <footer>Alicia Tugores Bahana</footer>
+    </body>
+</html>

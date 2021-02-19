@@ -1,0 +1,32 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <p>Este examen no es nada fácil, seguro que suspendo y encima no me da tiempo a acabarlo</p>
+        <p>¿De qué color quieres que sea el texto? <input id="texto" type="color" name="color" ></p>
+        <p>¿De qué color quieres que sea el fondo? <input id="fondo" type="color" name="color" ></p>
+        <button onclick="colortexto()">Cambiar color del texto</button>
+        <button onclick="colorfondo()">Cambiar color del fondo</button>
+        <script>
+
+            function colortexto() {
+            
+                document.body.style.color = document.getElementById('texto').value; /*Cojo el valor que devuelve el cuadro de formulario y se lo pongo como color de texto*/
+            }
+
+            function colorfondo() {
+                
+                document.body.style.background = document.getElementById('fondo').value;/*Cojo el valor que devuelve el cuadro de formulario y se lo pongo de fondo*/
+            }
+        </script>
+    </body>
+</html>

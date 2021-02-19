@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+
+form{
+    margin: 2rem auto;
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+}

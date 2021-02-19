@@ -1,0 +1,27 @@
+h1{
+    color: rgb(182, 231, 182);
+    border: rgb(8, 75, 2) 10px solid;
+    text-align: center;
+    background-color: rgb(232, 241, 214);  
+}
+
+section.jota{
+    font-size: 34pt;
+    text-align: center;
+    color: #313131;
+    width: auto;
+    height: 250px;
+    background-color:rgb(235, 223, 223);
+    border: 3px solid rgb(0, 255, 157);
+
+}
+
+section.format{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(80, 185, 255);
+    text-align: center;
+    font-size: 25pt;
+    color: rgb(26, 1, 1);
+    margin-top: 10px;
+}

@@ -1,0 +1,30 @@
+<!--4.- Crea una pàgina que contengui un encapçalament h1, i després amb un codi JS, afegir davall del encapçalament, 
+    més encapçalaments (el número se demanarà per pantalla, amb el seu text corresponent).-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1 id="ll">Esto es un título</h1> 
+        <button onclick="afp()">Haz click para añadir</button>
+        <script>
+            function afp() {
+                var cantidad = parseInt(prompt('Cantidad de números'));
+                for(i = 1; i <= cantidad; i++ ) {
+                    var encap = document.createElement('h1');
+                    var noutext = document.createTextNode(prompt('Escriu el text del nou titol'));
+                    encap.appendChild(noutext);
+                    document.getElementById('ll').appendChild(encap);
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

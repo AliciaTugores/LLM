@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h2>Participants enquesta</h2>
+        <form>
+        <p>Nombre completo: <input id="nombre" type="text" name="nombre" ></p>
+        <p>Estudios que cursa actualmente: <input id="estudios" type="text" name="curso"></p>
+        <p>Fecha de inicio curso: <input type="date" name="fecha"></p>
+        <p> Hobies: <br>
+        <input type="checkbox" name="hobbie" value="si">comer</br>
+        <input type="checkbox" name="hobbie" value="si">Nadar</br>
+        <input type="checkbox" name="hobbie" value="si">Ver series</br>
+        <input type="checkbox" name="hobbie" value="si">Gym</p>
+        <input type="submit" value="Enviar información">
+        <input type="reset" value="Borrar información">
+        </form>
+        <button onclick="addnombre()">añadir nombre</button>
+        <button onclick="addestudio()">añadir estudio</button>
+
+        <ul id="lista">
+
+        </ul>
+        
+        <script>
+        
+        function addnombre() {
+            var nombres = document.getElementById('nombre').value /*cojo el valor de la casilla del nombre*/
+            var x = document.createElement('li'); /*creo un elemento li*/
+            var texto = document.createTextNode('nombres'); /*creo un texto con el valor de la casilla nombre*/
+            x.appendChild('texto'); /*añado el valor al 'li'*/
+            document.getElementById('lista').appendChild('x'); /*añado a 'ul' el elemento 'li' */
+            
+        }
+
+        function addestudio() {
+            var estudios = document.getElementById('estudios').value /*cojo el valor de la casilla de estudios*/
+            var añadir = document.createElement('li'); /*creo un elemento li*/
+            var texto2 = document.createTextNode('estudios'); /*creo un texto con el valor de la casilla estudios*/
+            x.appendChild('texto2'); /*añado el valor al 'li'*/
+            document.getElementById('lista').appendChild('x'); /*añado a 'ul' el elemento 'li' */
+        }
+
+        
+        
+        </script>
+    </body>
+</html>

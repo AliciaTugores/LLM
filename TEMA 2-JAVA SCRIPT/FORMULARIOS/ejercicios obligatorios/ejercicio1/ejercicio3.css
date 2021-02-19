@@ -1,0 +1,27 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+
+div{
+    width: 800px;
+    height: 200px;
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    color: red;
+    font-style: italic;
+    size: 20px;
+}
+
+aside{
+    width: 300px;
+    height: 25px;
+    background-color: blueviolet;
+    float: right;
+}

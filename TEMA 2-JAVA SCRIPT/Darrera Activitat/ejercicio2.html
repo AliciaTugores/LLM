@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <button onclick="url()">
+            Borja Moll
+        </button>
+        <script>
+            var web = 'https://www.cifpfbmoll.eu/'
+
+            function url() {
+                var confirmacion = confirm("¿Quieres ir a la páguina web del Borja Moll?")
+                if (confirmacion == true) {
+                    window.open(web);
+                }
+                else {
+                    alert("Acción cancelada")
+                }
+            }
+
+        </script>
+    </body>
+</html>

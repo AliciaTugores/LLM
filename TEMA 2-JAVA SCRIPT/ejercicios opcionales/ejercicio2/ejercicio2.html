@@ -1,0 +1,30 @@
+<!--2.- Crea una llista amb els següents components informàtics: Teclat, Ratolí. Després afegeix un tercer element a la llista 
+    (Router) quan l'usuari faci doble click sobre un botó.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <ul id="lol">
+            <li>Teclat</li>
+            <li>Ratolí</li>
+        </ul>
+        <button ondblclick="add()">Haz doble click para añadir elemento a la lista</button>
+        
+        <script>
+            
+            function add() {
+                var el = document.createElement('li');
+                var texto = document.createTextNode('Router');
+                el.appendChild(texto);
+                document.getElementById('lol').appendChild(el);
+            }
+        </script>
+    </body>
+</html>

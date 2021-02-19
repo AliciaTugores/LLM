@@ -1,0 +1,34 @@
+<!--2. Crear un document HTML que tengui:
+
+    Un <main> que contendrà un botó.
+    Un <footer> que tendrà el text que vulguis.
+    Un CSS pel <footer>: Que quedi fixat abaix de la taula, amb una grandària de 100% x 25%, de fons vermell, lletra blanca amb grandària 30px i centrada.
+
+Fer una funció js que permeti canviar el text que hi ha dins del <footer> de la pàgina, demanant el nou text per pantalla. La funció és cridarà 
+mitjançant l'esdeveniment HTML "onclick" que es llançarà mitjançant el botó que hem creat al <main>.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ejercicio2.css">
+    </head>
+    <body>
+        <main>
+            <button onclick="changefooter()">CAMBIAR PIE DE PAGINA</button>
+        </main>
+        
+        <script>
+            var question = prompt('¿Qué quieres que aparezca al final de la página?')
+            function changefooter(){
+                document.getElementsByTagName('footer')[0].innerHTML = question
+            }
+        </script>
+
+        <footer>Alicia Tugores Bahana</footer>
+    </body>
+</html>

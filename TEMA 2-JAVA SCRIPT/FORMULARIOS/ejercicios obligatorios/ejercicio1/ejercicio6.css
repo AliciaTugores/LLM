@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    margin: 3rem ;
+    align-items: center;
+}
+
+fieldset{
+    text-align: center;
+    width: 350px;
+    margin: 25px;
+}
+            
+input{
+    padding: 2rem;
+    margin: 1rem;
+}

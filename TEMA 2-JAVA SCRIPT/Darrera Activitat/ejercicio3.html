@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <body>
+        <img src="img/descarga.jpg" id="imagen">
+
+        <button onclick="ver()">
+            Ver 
+        </button>
+
+        <button onclick="dejardever()">
+            Dejar de ver
+        </button>
+
+        <button onclick="masgrande()">
+            hacerla más grande
+        </button>
+
+        <button onclick="maspeque()">
+            hacerla más pequeña
+        </button>
+
+        <script>
+
+            function ver() {
+                document.getElementById("imagen").style.visibility = "visible"
+            }
+
+            function dejardever() {
+                document.getElementById("imagen").style.visibility = "hidden"
+            }
+
+            function masgrande() {
+                document.getElementById("imagen").style.height = "30%"
+                document.getElementById("imagen").style.width = "30%"
+            }
+
+            function maspeque() {
+                document.getElementById("imagen").style.height = "10%"
+                document.getElementById("imagen").style.width = "10%"
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!--2. Crea un formulari amb els següents camps que s'hauran de validar amb HTML5.
+DNI: amb una entrada prevista de nn.nnn.nnn-lletra (on "n" són números de 0 a 9 i "lletra" lletres de [A-Z].
+e-mail: amb un format previst xx@yy.z (on "xx" serà el nom d'usuari i "yy.z" serà el domini.-->
+
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form action="javascript:void();">
+            <p>Escribe tu e-mail <input type="text" name="e-mail" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@*[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"></p>
+            <p>Indica tu DNI <input type="text" name="DNI" placeholder="Introduzca su DNI" pattern="[0-9]{8}[A-Za-z]{1}"></p>
+            
+            <input type="submit" value="Enviar" />
+        </form>
+        <script src="" async defer></script>
+    </body>
+</html>

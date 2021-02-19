@@ -1,0 +1,41 @@
+<!--4. Amb el formulari de l'exercici 2, fes la validació mitjançant JavaScript.-->
+
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p>Introduzca su DNI con formato nn.nnn.nnn-L</p><input type="text" id="DNI">
+        <p>Introduzca su e-mail con formato xx@yy.zz</p><input type="email" id="e-mail">
+        <input type="submit" value="enviar" onclick="DNIcorrecto(), validarmail()">
+
+        <script>
+            function DNIcorrecto() {
+                dni = document.getElementById('DNI').value;
+                if (/^\d{8}[a-zA-Z]$/.test(dni)){
+                    alert('El DNI ' + dni + ' es correcto');
+                } 
+                else {
+                    alert('El DNI es incorrecto');
+                }
+            }
+
+            function validarmail() {
+                mail = document.getElementById('e-mail').value;
+                if (/^[-\W.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,4}$/i.test(mail)){
+                    alert('La cuenta de correo ' + mail + ' es correcta');
+                }
+                else {
+                    alert('La cuenta de correo ' + mail + ' es incorrecta');
+                }
+            }
+        </script>
+    </body>
+</html>

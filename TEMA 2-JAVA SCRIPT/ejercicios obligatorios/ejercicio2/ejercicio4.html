@@ -1,0 +1,38 @@
+<!--4. Realitza una pàgina que mostri quatre imatges que representen cercles d'un color cadascuna d'elles (que trobaràs aquí per descarregar), 
+    de manera que quan es passi amb el ratolí per damunt de cada cercle, ha de canviar el color del fons de la pàgina amb el mateix color del cercle seleccionat.
+
+La pàgina ha de tenir un encapçalament <h1> que anirà dins d'una etiqueta <header>, amb una regla de CSS: centrat i color violeta.
+Les imatges han d'anar dins l'etiqueta semàntica <main>.
+El <main> ha de tenir les següents regles de CSS:
+Una amplada automàtica, una alçada de 400px,  un màxim d'amplada i d'alçada automàtica, un marge de 30px i una vora sòlida de 5px de grossor i de color blau. 
+Les imatges han de tenir una grandària de 150px x 150px-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ejercicio4.css">
+    </head>
+    <body>
+        <header>
+            <h1>EJERCICIO 4</h1>
+        </header>
+        <main>
+            <img src="imagenes/cercleblau.png" width="150px" height="150xp" onmouseover = "changecolor('#03a9f4')"></img>
+            <img src="imagenes/cerclemarro.png" width="150px" height="150xp" onmouseover = "changecolor('#c1694f')"></img>
+            <img src="imagenes/cercletaronja.png" width="150px" height="150xp" onmouseover = "changecolor('#ffac33')"></img>
+            <img src="imagenes/cercleverd.png" width="150px" height="150xp" onmouseover = "changecolor('#78b159')"></img>
+            <img src="imagenes/cerclevermell.png" width="150px" height="150xp" onmouseover = "changecolor('#ff0000')"></img>
+        </main>
+        
+        <script>
+            function changecolor(color){
+                document.body.style.backgroundColor = color
+            }
+        </script>
+    </body>
+</html>

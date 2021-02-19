@@ -1,0 +1,18 @@
+footer{
+    position: absolute;
+    bottom: 0%;
+    height: 25%;
+    width: 100%;
+    background-color:red;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+ul.vistallista{
+    display: inline;
+    align-items: flex-start;
+    color: #229954;
+    font-size: 125%;
+    font-family: Arial;
+
+}
