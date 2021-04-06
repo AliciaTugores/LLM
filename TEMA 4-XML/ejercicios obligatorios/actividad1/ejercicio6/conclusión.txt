@@ -1,0 +1,3 @@
+Éste código xml está bien formado pero no valida y es porque en la definición de la estructura
+de los elementos indica en el 'beguda' tiene que haber: codi O nom Y preu
+Quiere decir que tiene que haber o un código o un nombre y es obligatorio que tenga un precio.

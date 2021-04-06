@@ -1,0 +1,3 @@
+El código xml no validaba por los siguientes motivos:
+
+faltaba la etiqueta <producte> dentro de <productes>, faltaba la etiqueta <nom> en cada <producte>.

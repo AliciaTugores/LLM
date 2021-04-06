@@ -1,0 +1,44 @@
+<historics>
+
+    <historic descripcio="IBM posa al mercat el PC.">
+        <data>
+            <dia>
+				12
+			</dia>
+            <mes>
+				8
+			</mes>
+            <any>
+				1981
+			</any>
+        </data>
+    </historic>
+
+    <historic descripcio="Se funda Google.">
+        <data>
+            <dia>
+				4
+			</dia>
+            <mes>
+				9
+			</mes>
+            <any>
+				1998
+			</any>
+        </data>
+    </historic>
+    <historic descripcio="Se funda Facebook.">
+        <data>
+            <dia>
+				4
+			</dia>
+            <mes>
+				2
+			</mes>
+            <any>
+				2004
+			</any>
+        </data>
+    </historic>
+    
+</historics>

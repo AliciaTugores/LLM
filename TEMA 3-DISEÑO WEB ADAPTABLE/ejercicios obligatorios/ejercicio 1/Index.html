@@ -1,0 +1,79 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="actividadBloc3.css">
+    </head>
+    <body>
+        
+        <header>
+            <nav>
+                <ul>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Index.html">Home</a></li>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Perros.html">Perros</a></li>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Gatos.html">Gatos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Quam vitae porttitor</h2>
+            <p>Praesent elit tortor, molestie non vestibulum et, fermentum sit amet nisi. Curabitur lobortis sapien risus. Praesent lacus dolor, ornare at nisl eget, ullamcorper aliquet mi.Cras ac elementum felis. Sed sollicitudin porttitor mauris, ut suscipit sapien malesuada ac. Etiam vitae vehicula ipsum. Nam hendrerit, lorem sed blandit volutpat, urna sapien faucibus magna, sed sagittis nunc est tempus lectus. Sed pharetra quam sed ullamcorper vulputate. Nunc vehicula, mauris in lobortis mattis, quam turpis porta magna, nec porttitor purus ante et risus. Donec vehicula lorem sit amet nisi efficitur, quis semper leo bibendum. Nulla dignissim volutpat quam vitae porttitor. Etiam dictum iaculis imperdiet. Vivamus sit amet justo sit amet dolor pulvinar rhoncus. Vestibulum sed purus ultricies, condimentum felis non, sollicitudin lorem. Mauris feugiat ex in est hendrerit semper.</p>
+
+        </main>
+
+        <section>
+            <p>Donec tincidunt nec sapien quis rutrum. Nullam porta maximus quam et tincidunt. Etiam eleifend eros eget dui ornare, vitae volutpat risus imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel rutrum orci. Quisque id nunc ut nisl ultricies venenatis. </p>
+        </section>
+
+        <section>
+            <p>Donec tincidunt nec sapien quis rutrum. Nullam porta maximus quam et tincidunt. Etiam eleifend eros eget dui ornare, vitae volutpat risus imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vel rutrum orci. Quisque id nunc ut nisl ultricies venenatis. </p>
+            <p>Maecenas nisl arcu, auctor non egestas quis, placerat ut massa. Maecenas sed dolor dui. Aliquam semper orci sed purus blandit condimentum. Suspendisse vestibulum pulvinar dolor ut rutrum. Fusce eu ornare libero. Cras semper accumsan tortor vel efficitur. Praesent pellentesque justo sed condimentum porttitor. Nulla ut odio orci.</p>
+        </section>
+
+        <div class="imagenes">
+            <img src="imagen2.jpg">
+        </div>
+
+        <section id="formulario">
+            <form>
+                <p>Usuario <input  id="usuario" type="text" name="usuario" required></p>
+                <p>Introduzca su edad<input  id="edad" type="number" name="edad" required></p>
+                <legend>Añade un comentario</legend>
+                <p><textarea  id="comentario" maxlength="35" required></textarea></p>
+                
+                <input type="submit" value="enviar">
+                <input type="reset" value="eliminar">
+                <button onclick="add_comentario(); return false">añadir comentario</button>
+            </form>
+        </section>
+
+        <section id="seccionComents">
+            <h1>COMENTARIOS</h1>
+        </section>
+
+
+        <footer>
+            <p><b>Alicia Tugores Bahana</b></p>
+            <address>C/Infanta Pau nº2</address>
+            <a href="mailto:aliciatugores1098@gmail.com">aliciatugores1098@gmail.com</a>
+        </footer>
+
+        <script>
+
+            function add_comentario(){
+                var seccion = document.getElementById("seccionComents");
+                var usuario = document.getElementById("usuario").value;
+                var comentario = document.getElementById("comentario").value;
+                seccion.innerHTML += "<h3>" + usuario + "</h3>";
+                seccion.innerHTML += "<p>" + comentario + "</p>";
+            }
+
+        </script>
+    </body>
+</html>

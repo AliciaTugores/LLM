@@ -1,0 +1,4 @@
+Había etiquetas definidas como 'id' que tenían espacio(como en  <cuadro titol="Adán y Eva" autor="Lucas Cranach, el viejo" />
+, también había una etiqueta que ponía 'escultor'en vex de 'escultura' como está definido en el DTD, 
+en la última etiqueta 'fotografia' le faltaba el 
+elemento 'fotograf=""'.

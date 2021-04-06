@@ -1,0 +1,6 @@
+El código xml está bien formado, pero nos da error a la hora de validarlo y esto es por:
+
+en la línea 6, hay un número '10' definido en un elemento '<número>' y da error porque
+no se encuentra el elemento, y que '<número>' no está definido como '<números>' en:
+
+ <!ELEMENT numeros (#PCDATA)>

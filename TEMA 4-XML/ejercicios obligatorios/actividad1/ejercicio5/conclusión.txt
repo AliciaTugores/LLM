@@ -1,0 +1,22 @@
+Éste código xml no está bien formado ni valida por los siguientes aspectos:
+
+BIEN FORMADO:
+
+<nom>Francis</nombre> --> el cierre de este elemento es distinto a la apertura y no esta correcto
+y otro motivo por el cual no está bien formado es que en 
+
+  </director>
+</directors_cine>     --> ésta sobra!
+<director>
+    <nom>Federico</nombre>
+    <llinatge>Fellini</llinatge>
+    <data_naixement>20 de gener del 1920 </data_naixement>
+  </director>
+</directors_cine>
+
+Se cierra primero la etiqueta </directors_cine> y luego se introduce otra <director>
+
+VALIDADO:
+
+En cuanto a la validación, da error porque está definicio que el director ha de llevar nombre O apellidos
+por tanto si tiene los 2 elementos rompe lo establecido.

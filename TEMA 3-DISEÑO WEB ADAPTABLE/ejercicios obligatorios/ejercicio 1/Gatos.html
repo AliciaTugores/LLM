@@ -1,0 +1,81 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="actividadBloc3.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Index.html">Home</a></li>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Perros.html">Perros</a></li>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Gatos.html">Gatos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Algunos datos sobre los Gatos</h2>
+            <p>El gato doméstico​ (Felis silvestris catus), llamado popularmente gato, y de forma coloquial minino,3​ michino,4​ michi,5​ micho,6​ mizo,7​ miz,8​ morroño9​ o morrongo,10​ entre otros nombres, es un mamífero carnívoro de la familia Felidae. Es una subespecie domesticada por la convivencia con el ser humano.
+
+                El nombre actual en muchas lenguas proviene del latín vulgar catus. Paradójicamente, catus aludía a los gatos salvajes, mientras que los gatos domésticos, en latín, eran llamados felis.</p>
+        </main>
+
+        <section>
+            <p>Como resultado de mutaciones genéticas, cruzamiento y selección artificial, hay numerosas razas. Algunas, como la raza Sphynx o la Peterbald están desprovistas de pelo; otras carecen de cola, como los gatos de la raza Manx, y algunas tienen coloraciones atípicas, como los llamados gatos azules.
+
+                El gato se comunica a través de vocalizaciones. Las más populares son su característico maullido y el ronroneo, pero puede aullar, gemir, gruñir y bufar.11​ Además, adopta poses o expresiones que informan, a sus congéneres, sus enemigos o sus cuidadores, de su ánimo o sus intenciones.
+                
+                Junto con el perro, es el animal doméstico más popular, como mascota, como ayuda en la lucha contra roedores o ambas cosas.</p>
+        </section>
+
+        <div class="imagenes">
+            <img src="images.jfif">
+        </div>
+
+        <section>
+            <p>Por su amplio abanico de presas potenciales, por su alta eficiencia como depredador, y por su elevado éxito reproductivo –especialmente si se suministra artificialmente alimento a las colonias sin tomar medidas adicionales para limitar su fertilidad– el gato doméstico está incluido en la lista 100 de las especies exóticas invasoras más dañinas del mundo12​ de la Unión Internacional para la Conservación de la Naturaleza.</p>
+        </section>
+
+        <section id="formulario">
+            <form>
+                <p>Usuario <input  id="usuario" type="text" name="usuario" required></p>
+                <p>Introduzca su edad<input  id="edad" type="number" name="edad" required></p>
+                <legend>Añade un comentario</legend>
+                <p><textarea  id="comentario" maxlength="35" required></textarea></p>
+                
+                <input type="submit" value="enviar">
+                <input type="reset" value="eliminar">
+                <button onclick="add_comentario(); return false">añadir comentario</button>
+            </form>
+        </section>
+
+        <section id="seccionComents">
+            <h1>COMENTARIOS</h1>
+        </section>
+
+
+        <footer>
+            <p><b>Alicia Tugores Bahana</b></p>
+            <address>C/Infanta Pau nº2</address>
+            <a href="mailto:aliciatugores1098@gmail.com">aliciatugores1098@gmail.com</a>
+        </footer>
+
+        <script>
+
+            function add_comentario(){
+                var seccion = document.getElementById("seccionComents");
+                var usuario = document.getElementById("usuario").value;
+                var comentario = document.getElementById("comentario").value;
+                seccion.innerHTML += "<h3>" + usuario + "</h3>";
+                seccion.innerHTML += "<p>" + comentario + "</p>";
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="actividadBloc3.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Index.html">Home</a></li>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Perros.html">Perros</a></li>
+                    <li id="menu2"><a href="file:///C:/CLASE/LLM/TEMA%203-DISE%C3%91O%20WEB%20ADAPTABLE/ejercicios%20obligatorios/ejercicio%201/Gatos.html">Gatos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Comportamiento canino</h2>
+            <p>La definición de comportamiento canino comporta el conjunto de respuestas coordinadas (acciones e inacciones) de perros domésticos (individualmente o en grupo) a estímulos internos o externos.
+
+                Como la especie animal domesticada más antigua que es, con una estimación de entre 9.000 y 30.000 años, el comportamiento de los perros ha sido inevitablemente conformado por milenios de contacto con humanos. Como resultado de esta evolución social y física, los perros, más que otras especies, han adquirido la capacidad de comprender y comunicarse con los humanos y están excepcionalmente en sintonía con nuestros comportamientos.
+                
+                Estudiosos del comportamiento, han descubierto un sorprendente conjunto de habilidades sociales y cognitivas en el perro doméstico. Estas habilidades no se expresan en parientes caninos cercanos ni en otros animales como los grandes simios, sino que, más bien, son paralelos a algunas capacidades sociales y cognitivas de los niños.3</p>
+        </main>
+
+        <section>
+            <p>La inteligencia canina es la habilidad del perro de percibir información y retenerla como un conocimiento para aplicarlo y resolver problemas. Los perros han sido enseñados a aprender por inferencia, es decir, sacando consecuencias o deduciendo algo de otra cosa. Un estudio con un border collie,4​ mostró como conocía los nombres de alrededor de 200 objetos y temas diferentes. Los perros son capaces de leer y reaccionar apropiadamente al lenguaje del cuerpo humano como los gestos y señales, así como comprender comandos de voz.</p>
+        </section>
+
+        <div class="imagenes">
+            <img src="imagen1.jpg">
+        </div>
+
+        <section>
+            <p>La comunicación canina habla de como los perros "hablan" entre sí, como comprenden los mensajes que los humanos les envían y como los humanos pueden traducir las ideas que los perros están transmitiendo.</p>
+            <p>Algunos de estos comportamientos de comunicación son la mirada, la expresión facial, la vocalización, las posturas corporales (movimientos del cuerpo y extremidades) y comunicación gustativa (olfato, feromonas y gusto). Los humanos se comunican con los perros utilizando la vocalización, las señales manuales y la postura corporal.</p>
+        </section>
+
+        <section id="formulario">
+            <form>
+                <p>Usuario <input  id="usuario" type="text" name="usuario" required></p>
+                <p>Introduzca su edad<input  id="edad" type="number" name="edad" required></p>
+                <legend>Añade un comentario</legend>
+                <p><textarea  id="comentario" maxlength="35" required></textarea></p>
+                
+                <input type="submit" value="enviar">
+                <input type="reset" value="eliminar">
+                <button onclick="add_comentario(); return false">añadir comentario</button>
+            </form>
+        </section>
+
+        <section id="seccionComents">
+            <h1>COMENTARIOS</h1>
+
+        </section>
+
+
+        <footer>
+            <p><b>Alicia Tugores Bahana</b></p>
+            <address>C/Infanta Pau nº2</address>
+            <a href="mailto:aliciatugores1098@gmail.com">aliciatugores1098@gmail.com</a>
+        </footer>
+
+        <script>
+
+            function add_comentario(){
+                var seccion = document.getElementById("seccionComents");
+                var usuario = document.getElementById("usuario").value;
+                var comentario = document.getElementById("comentario").value;
+                seccion.innerHTML += "<h3>" + usuario + "</h3>";
+                seccion.innerHTML += "<p>" + comentario + "</p>";
+            }
+
+        </script>
+    </body>
+</html>

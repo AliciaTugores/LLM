@@ -1,0 +1,5 @@
+ÉSte código xml no está validado porque:
+
+"Nadar" está fuera del elemento "<aficio>".
+También cuando se declara el elementó se hace con acento en la 'o'; afició y en las etiquetas lo pone
+sin el acento y da error.
